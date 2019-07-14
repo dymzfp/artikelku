@@ -1,0 +1,400 @@
+body, html{
+	height: 100%;
+	/*
+	max-width: 1200px;
+	margin: auto;
+	*/
+}
+/*
+@media only screen and (min-width: 1200px){
+	header, .isi, footer{
+		box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+	}
+}
+*/
+/* header */
+header{
+	background-image: url('../img/header.jpg');
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.isi-header{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.isi-header h1{
+	text-align: center;
+	text-transform: uppercase;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 38px;
+	padding: 8px;
+
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+}
+.isi-header p{
+	letter-spacing: 4px;
+	display: none;
+}
+.isi-header p span{
+	background: rgba(0, 0, 0, 0.6);
+	padding: 4px 8px;
+	color: #fff;
+}
+.menu{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 8px;
+	background: rgba(255, 255, 255, 0.6);
+}
+@media only screen and (min-width: 600px){
+	.isi-header p{
+		display: block;
+	}
+	.menu{
+		display: none;
+	}
+}
+/* akhir header */
+
+
+/* isi */
+.isi{
+	padding-top: 16px;
+	padding-bottom: 64px;
+	background-color: #eee;
+	/*
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	*/
+}
+
+/* pencarian */
+.pencarian{
+	padding: 16px;
+	width: 100%;
+	margin: auto;
+}
+.pencarian input[type="text"], .pencarian input[type="submit"]{
+	float: left;
+	border: 0;
+}
+.pencarian input[type="text"]{
+	width: 75%;
+	height: 40px;
+	border: 1px solid #ddd;
+	padding: 0 8px;
+}
+.pencarian input[type="submit"]{
+	width: 25%;
+	height: 40px;
+	border: 1px solid #ddd;
+	background-color: #ddd;
+	cursor: pointer;
+	font-size: 16px;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+.pencarian input[type="submit"]:hover{
+	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+@media only screen and (min-width: 993px){
+	.pencarian{
+		width: 600px;
+	}
+}
+/* akhir pencarian */
+
+/* nav dan article */
+.isi-article{
+	padding: 16px;
+}
+.isi-article h3{
+	margin: 0;
+	background-color: #000;
+	color: #fff;
+	padding: 16px;
+}
+.isi-article ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+.isi-article li{
+	padding: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.isi-article li:last-child{
+	border-bottom: 0;
+}
+.isi-article img{
+	width: 50px;
+	float: left;
+	margin-right: 8px;
+}
+.isi-article .img-profil{
+	width: 100%;
+	float: none;
+	margin-right: 0;
+}
+.isi-article span.des{
+	font-size: 12px;
+	color: #555;
+}
+.isi-article .lengkap{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	background-color: #f44336;
+	color: #fff;
+	opacity: 0.5;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+.isi-article .lengkap a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+.isi-article .lengkap:hover{
+	opacity: 1;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+.isi-article .isi-profil{
+	background-color: #fff;
+	padding: 16px;
+}
+.isi-article .isi-profil p{
+	text-align: justify;
+}
+nav{
+	background-color: #000;
+	color: #fff;
+	overflow: hidden;
+	display: none;
+}
+.tampil{
+	display: block;
+}
+nav a{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 16px;
+	text-align: left;
+	font-size: 16px;
+	display: block;
+	background-color: #000
+}
+/*
+nav a{
+	line-height: 40px;
+	width: 100px;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	float: left;
+	background-color: #000
+} */
+@media only screen and (min-width: 600px){
+	nav{
+		display: block;
+	}
+	nav a{
+		width: 100px;
+		padding: 0;
+		text-align: center;
+		float: left;
+	}
+}
+@media only screen and (min-width: 993px){
+	nav a.nav-kanan{
+		float: right;
+	}
+}
+/* akhir nav dan article*/
+
+/* section */
+section{
+	padding: 16px;
+}
+.header-isi{
+	padding: 16px;
+	background-color: #000;
+	color: #fff;
+	display: block;
+	width: 100%;
+}
+@media only screen and (min-width: 600px){
+	.header-isi{
+		width: 300px;
+	}
+}
+.header-isi h3{
+	margin: 0;
+}
+.isi-section{
+	background-color: #fff;
+	padding: 16px 24px;
+	margin: 16px 0;
+}
+.isi-section-artikel{
+	background-color: #fff;
+	padding: 16px 24px;
+	margin: 0;
+}
+.judul-isi-section{
+	text-align: center;
+}
+.judul-isi-section h6{
+	color: #555;
+}
+.cuplikan-isi, .isi-artikel{
+	text-align: justify;
+	margin-top: 24px;
+}
+.cuplikan-isi img{
+	float: left;
+	width: 200px;
+	margin-right: 16px;
+}
+.cuplikan-isi p, .isi-artikel p{
+	text-indent: 36px;
+}
+.isi-artikel img{
+	width: 100%;
+	max-width: 100%;
+	margin: 16px 0;
+}
+.button-baca:link, .button-baca:visited{
+	padding: 8px;
+	background-color: #f44336;
+	color: #fff;
+	display: inline-block;
+	margin-top: 18px;
+	float: right;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+.button-baca:hover{
+	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;	
+}
+.pagination{
+	margin-top: 32px;
+}
+.pagination ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; 
+}
+.pagination li{
+	display: block;
+	float: left;
+	border: 1px solid #f44336;
+	border-right: 0;
+}
+.pagination li:last-child{
+	border-right: 1px solid #f44336;
+}
+.pagination li a{
+	display: block;
+	height: 36px;
+	width:40px;
+	line-height: 36px;
+	text-align: center;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;	
+}
+.pagination li a#aktif{
+	background-color: #f44336;
+	color: #fff;
+}
+.pagination li a:hover{
+	background-color: #f44336;
+	color: #fff;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;	
+}
+/* akhir section */
+/* tutup isi */
+
+/* footer */
+footer{
+	background-color: #000;
+	color: #fff;
+	padding: 32px 16px;
+}
+.kiri h6{
+	font-size: 15px;
+}
+.kiri h6, .kanan p{
+	text-align: center;
+}
+.kanan p a:link, .kanan p a:visited{
+	color: #2196F3;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+.kanan p a:hover, .kanan p a:active{
+	text-decoration: underline;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+@media only screen and (min-width: 600px){
+	.kiri h6{
+		text-align: left;
+	}
+	.kanan p{
+		text-align: right;
+	}
+	.kanan p a{
+		padding-left: 8px;
+	}
+}
+/* akhir footer */
