@@ -1,3 +1,3 @@
 # artikelku
 
-### desain web dengan HTML dan W3CSS,
+### desain web dengan HTML5 dan CSS3
